@@ -1,1 +1,1 @@
-# bootcampdevjr-modulo3-calculator
+# Projeto de calculadora em Javascript. 
