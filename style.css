@@ -6,6 +6,11 @@ body{
 
 input{
     height: 22px;
+    width: 280px;
+    padding:8px;
+    font-size: 1.2rem;
+    margin: 15px 70px;
+    border-radius: 5px;
 }
 
 .container{
@@ -31,13 +36,6 @@ input{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-input{
-    height: 22px;
-    padding:8px;
-    font-size: 1.2rem;
-    margin: 15px 70px;
-}
 
 input:focus{
     outline:none;

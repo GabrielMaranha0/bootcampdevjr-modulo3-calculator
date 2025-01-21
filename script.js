@@ -1,33 +1,14 @@
-function sum (){//função soma 
-    var num1 = parseFloat(document.getElementById("num1").value);//recebe os ID's dos inputs
-    var num2 = parseFloat(document.getElementById("num2").value);//altera de string para float
+function calc (op){
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var output = 0;
 
-    var output = num1 + num2;
+    switch(op){
+        case '+': output = num1 + num2; break;
+        case '-': output = num1 - num2; break;
+        case '*': output = num1 * num2; break;
+        case '/': output = num1 / num2; break;//caso for um ele realiza a operação necessária. 
 
-    document.getElementById("output").value = output; 
-}
-
-function sub (){//função soma 
-    var num1 = parseFloat(document.getElementById("num1").value);//recebe os ID's dos inputs
-    var num2 = parseFloat(document.getElementById("num2").value);//altera de string para float
-
-    var output = num1 - num2;
-
-    document.getElementById("output").value = output; 
-
-}function division (){//função soma 
-    var num1 = parseFloat(document.getElementById("num1").value);//recebe os ID's dos inputs
-    var num2 = parseFloat(document.getElementById("num2").value);//altera de string para float
-
-    var output = num1 / num2;
-
-    document.getElementById("output").value = output; 
-
-}function multiply (){//função soma 
-    var num1 = parseFloat(document.getElementById("num1").value);//recebe os ID's dos inputs
-    var num2 = parseFloat(document.getElementById("num2").value);//altera de string para float
-
-    var output = num1 * num2;
-
-    document.getElementById("output").value = output; 
+    }
+    document.getElementById("output").value = output;
 }

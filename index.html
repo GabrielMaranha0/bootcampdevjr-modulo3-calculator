@@ -15,19 +15,17 @@
             <h1>Calculadora</h1>
             <input id="num1"/>
             <input id="num2"/>
-            <button onclick="sum()">
-                Somar
-            </button>
-            <button onclick="sub()">
-                Subtrair
-            </button>
-            <button onclick="division()">
-                Dividir
-            </button>
-            <button onclick="multiply()">
-                Multiplicar
-            </button>
+
+                <div class="buttons">
+                    <button onclick="calc('+')">+</button>
+                    <button onclick="calc('-')">-</button>
+                    <button onclick="calc('*')">*</button>
+                    <button onclick="calc('/')">/</button>
+                  
+                  
+                </div>
             <input id="output" placeholder="resultado" readonly />
+          
         </div>
 
         <div class="history">
